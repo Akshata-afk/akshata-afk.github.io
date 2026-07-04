@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akshata Ramgeer — Application Security Engineer</title>
+<meta name="description" content="Akshata Ramgeer — Application Security Engineer specializing in mobile & web vulnerability assessment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanline-overlay" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__brand">AR<span class="nav__brand-dot">.</span></a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav__links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Findings</a>
+    <a href="#education">Education</a>
+    <a href="#contact" class="nav__cta">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <p class="hero__terminal" id="terminalLine"><span class="prompt">$</span> <span id="typedText"></span><span class="cursor">▍</span></p>
+    <h1 class="hero__name">AKSHATA<br>RAMGEER</h1>
+    <p class="hero__role">Application Security Engineer <span class="dot-sep">·</span> Mobile &amp; Web</p>
+    <p class="hero__tagline">I break apps before attackers get the chance. Static analysis, dynamic testing, and a genuine obsession with finding what shouldn't be there.</p>
+    <div class="hero__pills">
+      <a href="#projects" class="pill pill--primary">▲ FINDINGS</a>
+      <a href="mailto:akshataramgeer@gmail.com" class="pill pill--ghost">✉ EMAIL</a>
+    </div>
+    <div class="hero__meta">
+      <span>📍 Hyderabad, India</span>
+      <span class="status-chip"><span class="status-dot"></span> Open to opportunities</span>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section__head">
+    <p class="cmd">$ whoami</p>
+    <h2>About</h2>
+  </div>
+  <div class="about__body">
+    <p>I'm an application security professional who actually enjoys taking things apart to see how they break. Hands-on with the <strong>OWASP Mobile Top 10</strong>, Android APK analysis, and full vulnerability assessment workflows — from spotting the flaw to explaining exactly how to fix it.</p>
+    <p>Comfortable across the whole toolkit: <strong>Burp Suite</strong>, <strong>Wireshark</strong>, <strong>Nmap</strong>, <strong>apktool</strong>, and <strong>jadx</strong>, paired with static and dynamic analysis to catch what automated scans miss. I care less about finding a bug and more about making sure it actually gets fixed.</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="section__head">
+    <p class="cmd">$ cat skills.json</p>
+    <h2>Skills</h2>
+  </div>
+  <div class="skills__grid">
+
+    <div class="skill-card">
+      <p class="skill-card__label">Mobile Security</p>
+      <div class="chips">
+        <span class="chip">OWASP Mobile Top 10</span>
+        <span class="chip">Android App Security</span>
+        <span class="chip">APK Static Analysis</span>
+        <span class="chip">APK Dynamic Analysis</span>
+        <span class="chip">apktool</span>
+        <span class="chip">jadx</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <p class="skill-card__label">Security Tools</p>
+      <div class="chips">
+        <span class="chip">Burp Suite</span>
+        <span class="chip">Wireshark</span>
+        <span class="chip">Nmap</span>
+        <span class="chip">OWASP ZAP</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <p class="skill-card__label">Application Security</p>
+      <div class="chips">
+        <span class="chip">OWASP Web Top 10</span>
+        <span class="chip">Vulnerability Assessment</span>
+        <span class="chip">Penetration Testing</span>
+        <span class="chip">CVSS Scoring</span>
+        <span class="chip">Secure Coding</span>
+        <span class="chip">Threat Modeling</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <p class="skill-card__label">Networking &amp; OS</p>
+      <div class="chips">
+        <span class="chip">Networking Security</span>
+        <span class="chip">Linux Fundamentals</span>
+        <span class="chip">Cryptography Basics</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <p class="skill-card__label">Programming</p>
+      <div class="chips">
+        <span class="chip">Python (Basic)</span>
+        <span class="chip">Java (Basic)</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <div class="section__head">
+    <p class="cmd">$ history --experience</p>
+    <h2>Experience</h2>
+  </div>
+  <div class="timeline">
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__top">
+          <h3>Technical Recruiter Trainee</h3>
+          <span class="timeline__date">Nov 2022 – Jun 2023</span>
+        </div>
+        <p class="timeline__org">Software Guidance and Assistance · Pune</p>
+        <ul>
+          <li>Screened technical security profiles, building a working understanding of AppSec skill requirements and industry tooling.</li>
+          <li>Coordinated hiring for cybersecurity roles and improved candidate pipeline by <strong>30%</strong> through targeted technical assessments.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS / FINDINGS -->
+<section class="section" id="projects">
+  <div class="section__head">
+    <p class="cmd">$ scan --report projects/</p>
+    <h2>Findings</h2>
+  </div>
+
+  <div class="findings">
+
+    <article class="finding-card">
+      <div class="finding-card__head">
+        <span class="sev sev--critical">CRITICAL</span>
+        <span class="finding-id">VMS-2023-01</span>
+      </div>
+      <h3>Vulnerability Management System</h3>
+      <p class="finding-sub">Web &amp; Network Security</p>
+      <ul>
+        <li>Designed and built a full vulnerability management pipeline to discover, classify, and prioritize security weaknesses across web applications and network infrastructure.</li>
+        <li>Implemented CVSS-based severity scoring to triage vulnerabilities by risk level and assign remediation timelines.</li>
+        <li>Generated structured remediation reports with detailed findings, affected components, and recommended fixes.</li>
+      </ul>
+    </article>
+
+    <article class="finding-card">
+      <div class="finding-card__head">
+        <span class="sev sev--high">HIGH</span>
+        <span class="finding-id">SDL-2022-01</span>
+      </div>
+      <h3>Smart Door Lock System</h3>
+      <p class="finding-sub">Secure Access Control · C</p>
+      <ul>
+        <li>Developed a digital key-based authentication system in C enforcing strict access control for authorized users only.</li>
+        <li>Applied secure coding principles — input validation, session handling, and fail-safe defaults — to prevent unauthorized access.</li>
+        <li>Simulated real-world attack scenarios to test resilience against brute-force and replay attacks.</li>
+      </ul>
+    </article>
+
+  </div>
+</section>
+
+<!-- EDUCATION & CERTS -->
+<section class="section" id="education">
+  <div class="section__head">
+    <p class="cmd">$ cat education.log certifications.log</p>
+    <h2>Education &amp; Certifications</h2>
+  </div>
+
+  <div class="edu-grid">
+    <div class="edu-col">
+      <h3 class="edu-col__title">Education</h3>
+      <div class="edu-item">
+        <p class="edu-item__degree">B.E. in Computer Engineering</p>
+        <p class="edu-item__school">ISBM College of Technology, Pune</p>
+        <p class="edu-item__date">2020 – 2023</p>
+      </div>
+      <div class="edu-item">
+        <p class="edu-item__degree">Diploma in Computer Engineering</p>
+        <p class="edu-item__school">Marathwada Mitra Mandal's Polytechnic, Pune</p>
+        <p class="edu-item__date">2017 – 2020</p>
+      </div>
+    </div>
+
+    <div class="edu-col">
+      <h3 class="edu-col__title">Certifications &amp; Training</h3>
+      <div class="chips chips--stacked">
+        <span class="chip chip--cert">Cybersecurity Training — Krutantic Solutions</span>
+        <span class="chip chip--cert">OWASP MSTG — Self-study</span>
+        <span class="chip chip--cert">TryHackMe</span>
+        <span class="chip chip--cert">PortSwigger Web Academy</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section--contact" id="contact">
+  <div class="section__head">
+    <p class="cmd">$ contact --send</p>
+    <h2>Let's talk</h2>
+  </div>
+  <p class="contact__lead">Hiring for an AppSec, mobile security, or pentesting role? My inbox is open, and so is a call.</p>
+  <div class="contact__grid">
+    <a href="mailto:akshataramgeer@gmail.com" class="contact-card">
+      <span class="contact-card__label">Email</span>
+      <span class="contact-card__value">akshataramgeer@gmail.com</span>
+    </a>
+    <a href="tel:+917378845357" class="contact-card">
+      <span class="contact-card__label">Phone</span>
+      <span class="contact-card__value">+91 73788 45357</span>
+    </a>
+    <div class="contact-card contact-card--static">
+      <span class="contact-card__label">Location</span>
+      <span class="contact-card__value">Hyderabad, India</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Akshata Ramgeer <span class="dot-sep">·</span> Built line by line, tested the same way.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
