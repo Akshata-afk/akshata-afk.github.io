@@ -30,21 +30,56 @@
   </nav>
 </header>
 
-<!-- HERO -->
+<!-- HERO / DASHBOARD -->
 <section class="hero" id="top">
   <div class="hero__grid" aria-hidden="true"></div>
-  <div class="hero__inner">
-    <p class="hero__terminal" id="terminalLine"><span class="prompt">$</span> <span id="typedText"></span><span class="cursor">▍</span></p>
-    <h1 class="hero__name">AKSHATA<br>RAMGEER</h1>
-    <p class="hero__role">Application Security Engineer <span class="dot-sep">·</span> Mobile &amp; Web</p>
-    <p class="hero__tagline">I break apps before attackers get the chance. Static analysis, dynamic testing, and a genuine obsession with finding what shouldn't be there.</p>
-    <div class="hero__pills">
-      <a href="#projects" class="pill pill--primary">▲ FINDINGS</a>
-      <a href="mailto:akshataramgeer@gmail.com" class="pill pill--ghost">✉ EMAIL</a>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track" id="tickerTrack"></div>
+  </div>
+
+  <div class="dashboard">
+
+    <div class="dashboard__identity">
+      <p class="hero__terminal" id="terminalLine"><span class="prompt">$</span> <span id="typedText"></span><span class="cursor">▍</span></p>
+      <h1 class="hero__name">AKSHATA<br>RAMGEER</h1>
+      <p class="hero__role">Application Security Engineer <span class="dot-sep">·</span> Mobile &amp; Web</p>
+      <p class="hero__tagline">I monitor, detect, and shut down what shouldn't be there — before it becomes an incident.</p>
+      <div class="hero__pills">
+        <a href="#projects" class="pill pill--primary">▲ FINDINGS</a>
+        <a href="mailto:akshataramgeer@gmail.com" class="pill pill--ghost">✉ EMAIL</a>
+      </div>
+      <div class="hero__meta">
+        <span>📍 Hyderabad, India</span>
+        <span class="status-chip"><span class="status-dot status-dot--ok"></span> Open to opportunities</span>
+      </div>
     </div>
-    <div class="hero__meta">
-      <span>📍 Hyderabad, India</span>
-      <span class="status-chip"><span class="status-dot"></span> Open to opportunities</span>
+
+    <div class="dashboard__panels">
+
+      <div class="panel panel--chart">
+        <div class="panel__head">
+          <p class="panel__label">Network Activity Monitor</p>
+          <span class="panel__tag panel__tag--live">LIVE</span>
+        </div>
+        <svg class="chart" viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true">
+          <polyline id="chartLine" fill="none" stroke="#4CF1E0" stroke-width="2" points="0,90 40,70 80,85 120,50 160,60 200,30 240,55 280,40 320,65 360,45 400,60"/>
+        </svg>
+        <p class="panel__foot">Packets inspected today: <span id="packetCount">0</span></p>
+      </div>
+
+      <div class="panel panel--status">
+        <div class="panel__head">
+          <p class="panel__label">System Status</p>
+        </div>
+        <ul class="status-list">
+          <li><span class="status-dot status-dot--ok"></span> Firewall <span class="status-val">ACTIVE</span></li>
+          <li><span class="status-dot status-dot--ok"></span> IDS <span class="status-val">MONITORING</span></li>
+          <li><span class="status-dot status-dot--warn"></span> Patch Level <span class="status-val">2 PENDING</span></li>
+          <li><span class="status-dot status-dot--ok"></span> Endpoint Scan <span class="status-val">CLEAN</span></li>
+        </ul>
+      </div>
+
     </div>
   </div>
 </section>
