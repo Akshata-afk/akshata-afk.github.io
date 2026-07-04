@@ -40,6 +40,61 @@ function typeLines(lines, el){
 typeLines(lines, typedEl);
 
 // ============================================
+// SOC ticker feed
+// ============================================
+const tickerMessages = [
+  ['[INFO]', 'Nmap scan completed — 0 open ports flagged'],
+  ['[SCAN]', 'APK static analysis running on target build'],
+  ['[OK]', 'OWASP ZAP baseline scan finished — no criticals'],
+  ['[INFO]', 'Burp Suite proxy capturing traffic'],
+  ['[SCAN]', 'jadx decompilation complete'],
+  ['[OK]', 'Wireshark capture analyzed — no anomalies'],
+  ['[INFO]', 'CVSS scoring applied to 3 findings'],
+  ['[SCAN]', 'Dynamic analysis session started']
+];
+const track = document.getElementById('tickerTrack');
+if (track){
+  const build = () => tickerMessages.map(
+    ([tag, msg]) => `<span>${tag}</span>${msg}`
+  ).join('<span style="color:var(--text-dim);margin:0 8px;">//</span>');
+  track.innerHTML = build() + build(); // duplicate for seamless loop
+}
+
+// ============================================
+// Packet counter (cosmetic, ties to "live" feel)
+// ============================================
+const packetEl = document.getElementById('packetCount');
+if (packetEl && !reduceMotion){
+  let count = 1200 + Math.floor(Math.random() * 300);
+  packetEl.textContent = count.toLocaleString();
+  setInterval(() => {
+    count += Math.floor(Math.random() * 40) + 5;
+    packetEl.textContent = count.toLocaleString();
+  }, 1800);
+} else if (packetEl){
+  packetEl.textContent = '1,482';
+}
+
+// ============================================
+// Live network chart (redraws with new points periodically)
+// ============================================
+const chartLine = document.getElementById('chartLine');
+if (chartLine && !reduceMotion){
+  function randomPoints(){
+    const step = 40;
+    let pts = [];
+    for (let x = 0; x <= 400; x += step){
+      const y = 30 + Math.random() * 60;
+      pts.push(`${x},${y.toFixed(1)}`);
+    }
+    return pts.join(' ');
+  }
+  setInterval(() => {
+    chartLine.setAttribute('points', randomPoints());
+  }, 2600);
+}
+
+// ============================================
 // Mobile nav toggle
 // ============================================
 const navToggle = document.getElementById('navToggle');
